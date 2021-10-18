@@ -1,0 +1,12 @@
+﻿@using Microsoft.AspNetCore.Http;
+
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<br/>
+<h1>Dashboard</h1>
+
+<h4>Welcome @Context.Session.GetString("Username")!!</h4>
+
+<a asp-controller="Account" asp-action="Logout" class="btn btn-danger">Logout</a>
